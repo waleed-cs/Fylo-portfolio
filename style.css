@@ -13,6 +13,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: 14px;
+  position: relative;
 }
 
 img {
@@ -40,7 +41,6 @@ li,
 
 header {
   display: flex;
-  border: 1px solid red;
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 1rem;
@@ -66,7 +66,6 @@ ul {
   gap: 1rem;
   padding-left: 0;
   align-items: center;
-  border: 1px solid rgb(0, 119, 255);
 }
 
 /* making secions responsive */
@@ -96,6 +95,8 @@ section {
   color: hsl(0, 0%, 100%);
   font-weight: 700;
   border-radius: 100px;
+  margin-block: 1rem;
+  cursor: pointer;
 }
 
 .cards {
@@ -201,27 +202,64 @@ p {
   margin: 0;
 }
 
+.signUp {
+  width: 250px;
+  height: 250px;
+  background-color: hsl(0, 0%, 100%);
+  position: absolute;
+  bottom: -5%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+  margin-bottom: 2rem;
+}
+
+main {
+  position: relative;
+  padding-bottom: 15rem;
+}
+
+/* footer section */
 footer {
   background-color: hsl(216, 53%, 9%);
+  padding: 4rem;
+  position: relative;
 }
 
 .row {
   display: flex;
+  align-items: flex-start;
+  margin-top: 1.5rem;
+  border: 1px solid red;
+  gap: 5rem;
+  padding: 1rem;
+}
+
+.row > div {
+  border: 1px solid firebrick;
 }
 
 .location {
   display: flex;
-  border: 2px solid red;
-  gap: 1rem;
+  align-items: flex-start;
 }
 
 .location > p {
-  width: 60%;
+  margin-left: 0.5rem;
+  width: 35%;
 }
 
+.contact > div {
+  display: flex;
+  gap: 0.75rem;
+  margin-block: 0.75rem;
+}
+.socials > i {
+  padding: 0.5rem;
+}
 @media screen and (max-width: 768px) {
   .cards {
-    display: block;
+    grid-template-columns: 1fr;
   }
   .hero__text {
     display: grid;
