@@ -43,7 +43,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 2rem;
+  /* border: 2px solid rgb(63, 29, 29); */
 }
 
 #Logo {
@@ -134,6 +135,7 @@ section {
 
 .stay__link {
   display: flex;
+  margin-top: 0.75rem;
 }
 
 .stay__link > div {
@@ -203,60 +205,66 @@ p {
 }
 
 .signUp {
-  width: 250px;
-  height: 250px;
-  background-color: hsl(0, 0%, 100%);
-  position: absolute;
-  bottom: -5%;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 5;
-  margin-bottom: 2rem;
+  background-color: hsl(217, 28%, 15%);
+  width: 50%;
+  margin-inline: auto;
+  padding: 3rem;
+  text-align: center;
+}
+
+.signUp > article > p {
+  width: 80%;
+  margin: 1rem auto;
+}
+
+.signUp__flex {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  margin-inline: auto;
+}
+
+.signUp__flex > button {
+  border: none;
+  outline: none;
 }
 
 main {
   position: relative;
-  padding-bottom: 15rem;
 }
 
 /* footer section */
 footer {
   background-color: hsl(216, 53%, 9%);
   padding: 4rem;
-  position: relative;
 }
 
 .row {
-  display: flex;
-  align-items: flex-start;
-  margin-top: 1.5rem;
-  border: 1px solid red;
-  gap: 5rem;
-  padding: 1rem;
-}
-
-.row > div {
-  border: 1px solid firebrick;
+  display: grid;
+  /* grid-template-columns: 3fr 2fr 2fr 2fr 1fr; */
+  grid-template-columns: 30% 30% 15% 15% 10%;
+  place-items: center;
 }
 
 .location {
   display: flex;
   align-items: flex-start;
+  gap: 1rem;
 }
-
 .location > p {
-  margin-left: 0.5rem;
-  width: 35%;
+  width: 55%;
 }
 
 .contact > div {
   display: flex;
   gap: 0.75rem;
-  margin-block: 0.75rem;
+  margin-block: 1.25rem;
 }
+
 .socials > i {
-  padding: 0.5rem;
+  margin-left: 1rem;
 }
+
 @media screen and (max-width: 768px) {
   .cards {
     grid-template-columns: 1fr;
@@ -282,5 +290,17 @@ footer {
   .comments {
     flex-direction: column;
     margin-block: 3rem;
+  }
+
+  .row {
+    grid-template-columns: 1fr;
+    place-items: start;
+    margin-block: 1.5rem;
+  }
+  .socials {
+    justify-self: center;
+  }
+  .location > p {
+    width: 100%;
   }
 }
