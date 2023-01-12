@@ -212,6 +212,8 @@ p {
   padding: 3rem;
   text-align: center;
   border-radius: 10px;
+  margin-bottom: -9rem;
+  position: relative;
 }
 
 .signUp > article > p {
@@ -225,10 +227,6 @@ form {
   grid-template-columns: 70% 30%;
   place-items: center;
   width: 80%;
-}
-
-main {
-  position: relative;
 }
 
 #emailInput {
@@ -251,14 +249,15 @@ main {
 /* footer section */
 footer {
   background-color: hsl(216, 53%, 9%);
-  padding: 4rem;
+  padding: 10rem 3rem 1rem;
 }
 
 .row {
   display: grid;
-  /* grid-template-columns: 3fr 2fr 2fr 2fr 1fr; */
-  grid-template-columns: 30% 30% 15% 15% 10%;
+  gap: 1rem;
+  grid-template-columns: 25% 25% 15% 15% 20%;
   place-items: center;
+  margin-block: 1rem;
 }
 
 .location {
@@ -278,6 +277,24 @@ footer {
 
 .socials > i {
   margin-left: 1rem;
+}
+
+.socials {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.circle {
+  padding: 0.75rem;
+  color: #fff;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  margin-left: 0.25rem;
+}
+.sections {
+  display: grid;
+  gap: 0.25rem;
+  align-self: start;
 }
 
 @media screen and (max-width: 768px) {
