@@ -206,10 +206,12 @@ p {
 
 .signUp {
   background-color: hsl(217, 28%, 15%);
-  width: 50%;
+  width: 90%;
+  max-width: 950px;
   margin-inline: auto;
   padding: 3rem;
   text-align: center;
+  border-radius: 10px;
 }
 
 .signUp > article > p {
@@ -217,20 +219,33 @@ p {
   margin: 1rem auto;
 }
 
-.signUp__flex {
-  display: flex;
-  width: 50%;
-  justify-content: space-between;
+form {
+  display: grid;
   margin-inline: auto;
-}
-
-.signUp__flex > button {
-  border: none;
-  outline: none;
+  grid-template-columns: 70% 30%;
+  place-items: center;
+  width: 80%;
 }
 
 main {
   position: relative;
+}
+
+#emailInput {
+  padding: 1rem;
+  outline: none;
+  border: none;
+  height: 60%;
+  width: 100%;
+  border-radius: 100px;
+}
+
+.error {
+  color: red;
+  justify-self: start;
+  font-size: 0.75rem;
+  margin-left: 1rem;
+  display: none;
 }
 
 /* footer section */
@@ -302,5 +317,19 @@ footer {
   }
   .location > p {
     width: 100%;
+  }
+  .signUp {
+    padding: 1rem;
+  }
+  form {
+    grid-template-columns: 1fr;
+  }
+  form > .cta {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  #emailInput {
+    padding: 1.5rem;
   }
 }

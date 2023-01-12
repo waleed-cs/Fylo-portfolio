@@ -179,10 +179,16 @@
             extremely generous. If you have any questions, our support team
             would be happy to help you.
           </p>
-          <div class="signUp__flex">
-            <input type="text" name="" id="" placeholder="email@example.com" />
-            <button>Get Started For Free</button>
-          </div>
+          <form autocomplete="off">
+            <input
+              type="text"
+              name="emailInput"
+              id="emailInput"
+              placeholder="email@example.com"
+            />
+            <button class="cta">Get Started For Free</button>
+            <p class="error">Please enter a valid email address</p>
+          </form>
         </article>
       </div>
     </main>
@@ -227,5 +233,6 @@
         </div>
       </div>
     </footer>
+    <script src="./app.js"></script>
   </body>
 </html>
