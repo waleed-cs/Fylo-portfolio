@@ -1,0 +1,5 @@
+User-agent: *
+
+Allow: /
+
+Sitemap: https://wh-fylo.netlify.app/sitemap.xml
